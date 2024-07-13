@@ -1,0 +1,155 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.olamaps.io/places/v1/autocomplete?input=kempe
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Request-Id:
+      - "<X_REQUEST_ID>"
+      X-Correlation-Id:
+      - "<X_CORRELATION_ID>"
+      Authorization:
+      - Bearer fake_token
+      Api-Key:
+      - "<API_KEY>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Www-Authenticate:
+      - Key realm="kong"
+      Content-Length:
+      - '30'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - X-Request-ID,X-Correlation-ID
+      X-Request-Id:
+      - d9884c05-8f74-4d53-bdd6-ee60b374d9c0
+      X-Kong-Response-Latency:
+      - '1'
+      Expires:
+      - Sat, 13 Jul 2024 17:34:10 GMT
+      Cache-Control:
+      - max-age=0, no-cache, no-store
+      Pragma:
+      - no-cache
+      Date:
+      - Sat, 13 Jul 2024 17:34:10 GMT
+      Connection:
+      - keep-alive
+      Akamai-Grn:
+      - 0.36367c68.1720892050.5acf2834
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "message":"Unauthorized"
+        }
+  recorded_at: Sat, 13 Jul 2024 17:34:10 GMT
+- request:
+    method: get
+    uri: https://api.olamaps.io/places/v1/autocomplete?api_key=<API_KEY>&input=kempe
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Request-Id:
+      - "<X_REQUEST_ID>"
+      X-Correlation-Id:
+      - "<X_CORRELATION_ID>"
+      Authorization:
+      - Bearer fake_token
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Ratelimit-Limit:
+      - '500000'
+      X-Ratelimit-Remaining-Month:
+      - '499997'
+      X-Ratelimit-Limit-Month:
+      - '500000'
+      Ratelimit-Reset:
+      - '1489103'
+      Ratelimit-Remaining:
+      - '499997'
+      X-Request-Id:
+      - c809949d-8c1d-45cd-a85c-e6e0d3615c26
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - X-Request-ID,X-Correlation-ID
+      X-Kong-Upstream-Latency:
+      - '27'
+      X-Kong-Proxy-Latency:
+      - '3'
+      Content-Length:
+      - '5313'
+      Expires:
+      - Sat, 13 Jul 2024 18:21:37 GMT
+      Cache-Control:
+      - max-age=0, no-cache, no-store
+      Pragma:
+      - no-cache
+      Date:
+      - Sat, 13 Jul 2024 18:21:37 GMT
+      Connection:
+      - keep-alive
+      Akamai-Grn:
+      - 0.3e961160.1720894897.ebcd74c
+    body:
+      encoding: UTF-8
+      string: '{"error_message":"","info_messages":[],"predictions":[{"reference":"a1e99e3bd07b545284643f7bde183120","types":["route"],"matched_substrings":[{"offset":12,"length":5},{"offset":47,"length":5}],"terms":[{"offset":0,"value":"Nada
+        Prabhu Kempe Gowda Main Road"},{"offset":35,"value":"Nada Prabhu Kempe Gowda
+        Main Rd"},{"offset":68,"value":"Mariyannapalya"},{"offset":84,"value":"Hebbal
+        Kempapura"},{"offset":102,"value":"Bengaluru"},{"offset":113,"value":"Karnataka"},{"offset":124,"value":"560024"},{"offset":132,"value":"India"}],"distance_meters":13357,"structured_formatting":{"main_text_matched_substrings":[{"offset":12,"length":5}],"secondary_text_matched_substrings":[{"offset":12,"length":5}],"secondary_text":"Nada
+        Prabhu Kempe Gowda Main Rd, Mariyannapalya, Hebbal Kempapura, Bengaluru, Karnataka,
+        560024, India","main_text":"Nada Prabhu Kempe Gowda Main Road"},"description":"Nada
+        Prabhu Kempe Gowda Main Road, Nada Prabhu Kempe Gowda Main Rd, Mariyannapalya,
+        Hebbal Kempapura, Bengaluru, Karnataka, 560024, India","geometry":{"location":{"lng":77.61194,"lat":13.05155}},"place_id":"ola-platform:a1e99e3bd07b545284643f7bde183120","layer":["venue"]},{"reference":"617f8e0a5d3379eff5e964a90ab33765","types":["point_of_interest","establishment"],"matched_substrings":[{"offset":0,"length":5},{"offset":67,"length":5}],"terms":[{"offset":0,"value":"Kempe
+        Gowda Metro Station Bangalore"},{"offset":37,"value":"Bus Station 02"},{"offset":53,"value":"Tank
+        Bund Rd"},{"offset":67,"value":"Kempegowda"},{"offset":79,"value":"Majestic"},{"offset":89,"value":"Bengaluru"},{"offset":100,"value":"Karnataka"},{"offset":111,"value":"560009"},{"offset":119,"value":"India"}],"distance_meters":6897,"structured_formatting":{"main_text_matched_substrings":[{"offset":0,"length":5}],"secondary_text_matched_substrings":[{"offset":30,"length":5}],"secondary_text":"Bus
+        Station 02, Tank Bund Rd, Kempegowda, Majestic, Bengaluru, Karnataka, 560009,
+        India","main_text":"Kempe Gowda Metro Station Bangalore"},"description":"Kempe
+        Gowda Metro Station Bangalore, Bus Station 02, Tank Bund Rd, Kempegowda, Majestic,
+        Bengaluru, Karnataka, 560009, India","geometry":{"location":{"lng":77.57194,"lat":12.97589}},"place_id":"ola-platform:617f8e0a5d3379eff5e964a90ab33765","layer":["venue"]},{"reference":"a4f15340f49ea2391951e1114d88a42d","types":["route"],"matched_substrings":[{"offset":12,"length":5},{"offset":47,"length":5}],"terms":[{"offset":0,"value":"Nada
+        Prabhu Kempe Gowda Main Road"},{"offset":35,"value":"Nada Prabhu Kempe Gowda
+        Main Rd"},{"offset":68,"value":"Fortune Valley"},{"offset":84,"value":"Thanisandra"},{"offset":97,"value":"Bengaluru"},{"offset":108,"value":"Karnataka"},{"offset":119,"value":"560024"},{"offset":127,"value":"India"}],"distance_meters":13416,"structured_formatting":{"main_text_matched_substrings":[{"offset":12,"length":5}],"secondary_text_matched_substrings":[{"offset":12,"length":5}],"secondary_text":"Nada
+        Prabhu Kempe Gowda Main Rd, Fortune Valley, Thanisandra, Bengaluru, Karnataka,
+        560024, India","main_text":"Nada Prabhu Kempe Gowda Main Road"},"description":"Nada
+        Prabhu Kempe Gowda Main Road, Nada Prabhu Kempe Gowda Main Rd, Fortune Valley,
+        Thanisandra, Bengaluru, Karnataka, 560024, India","geometry":{"location":{"lng":77.61193,"lat":13.05208}},"place_id":"ola-platform:a4f15340f49ea2391951e1114d88a42d","layer":["venue"]},{"reference":"9ecaf543e02a1bb748984584f777ba23","types":["route"],"matched_substrings":[{"offset":0,"length":5},{"offset":18,"length":5}],"terms":[{"offset":0,"value":"Kempe
+        Gowda Road"},{"offset":18,"value":"Kempe Gowda Rd"},{"offset":34,"value":"Chikkanna
+        Layout"},{"offset":52,"value":"HBR Layout"},{"offset":64,"value":"Bengaluru"},{"offset":75,"value":"Karnataka"},{"offset":86,"value":"560043"},{"offset":94,"value":"India"}],"distance_meters":12281,"structured_formatting":{"main_text_matched_substrings":[{"offset":0,"length":5}],"secondary_text_matched_substrings":[{"offset":0,"length":5}],"secondary_text":"Kempe
+        Gowda Rd, Chikkanna Layout, HBR Layout, Bengaluru, Karnataka, 560043, India","main_text":"Kempe
+        Gowda Road"},"description":"Kempe Gowda Road, Kempe Gowda Rd, Chikkanna Layout,
+        HBR Layout, Bengaluru, Karnataka, 560043, India","geometry":{"location":{"lng":77.63878,"lat":13.0398}},"place_id":"ola-platform:9ecaf543e02a1bb748984584f777ba23","layer":["venue"]},{"reference":"6d111c6615ba5f74139c7723391b45e4","types":["point_of_interest","establishment"],"matched_substrings":[{"offset":0,"length":5},{"offset":35,"length":5}],"terms":[{"offset":0,"value":"Kempe
+        Gowda Nagar"},{"offset":19,"value":"Telecom Colony"},{"offset":0,"value":"Kempe
+        Gowda Nagar"},{"offset":54,"value":"Bengaluru"},{"offset":65,"value":"Karnataka"},{"offset":76,"value":"560097"},{"offset":84,"value":"India"}],"distance_meters":15830,"structured_formatting":{"main_text_matched_substrings":[{"offset":0,"length":5}],"secondary_text_matched_substrings":[{"offset":16,"length":5}],"secondary_text":"Telecom
+        Colony, Kempe Gowda Nagar, Bengaluru, Karnataka, 560097, India","main_text":"Kempe
+        Gowda Nagar"},"description":"Kempe Gowda Nagar, Telecom Colony, Kempe Gowda
+        Nagar, Bengaluru, Karnataka, 560097, India","geometry":{"location":{"lng":77.56671,"lat":13.06534}},"place_id":"ola-platform:6d111c6615ba5f74139c7723391b45e4","layer":["venue"]}],"status":"ok"}'
+  recorded_at: Sat, 13 Jul 2024 18:21:37 GMT
+recorded_with: VCR 6.2.0

@@ -1,0 +1,147 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.olamaps.io/places/v1/reverse-geocode?latlng=12.931316595874005,77.61649243443775
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Request-Id:
+      - "<X_REQUEST_ID>"
+      X-Correlation-Id:
+      - "<X_CORRELATION_ID>"
+      Authorization:
+      - Bearer fake_token
+      Api-Key:
+      - "<API_KEY>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Www-Authenticate:
+      - Key realm="kong"
+      Content-Length:
+      - '30'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - X-Request-ID,X-Correlation-ID
+      X-Request-Id:
+      - 2aa712df-6919-422c-ae9b-7bf945bc5dcc
+      X-Kong-Response-Latency:
+      - '1'
+      Expires:
+      - Sat, 13 Jul 2024 17:34:11 GMT
+      Cache-Control:
+      - max-age=0, no-cache, no-store
+      Pragma:
+      - no-cache
+      Date:
+      - Sat, 13 Jul 2024 17:34:11 GMT
+      Connection:
+      - keep-alive
+      Akamai-Grn:
+      - 0.36367c68.1720892051.5acf2bc8
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "message":"Unauthorized"
+        }
+  recorded_at: Sat, 13 Jul 2024 17:34:11 GMT
+- request:
+    method: get
+    uri: https://api.olamaps.io/places/v1/reverse-geocode?api_key=<API_KEY>&latlng=12.931316595874005,77.61649243443775
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Request-Id:
+      - "<X_REQUEST_ID>"
+      X-Correlation-Id:
+      - "<X_CORRELATION_ID>"
+      Authorization:
+      - Bearer fake_token
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Ratelimit-Limit:
+      - '500000'
+      X-Ratelimit-Remaining-Month:
+      - '499999'
+      X-Ratelimit-Limit-Month:
+      - '500000'
+      Ratelimit-Reset:
+      - '1489102'
+      Ratelimit-Remaining:
+      - '499999'
+      X-Request-Id:
+      - 18034e5c-2051-4c1a-a4a2-056b8189707d
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - X-Request-ID,X-Correlation-ID
+      X-Kong-Upstream-Latency:
+      - '28'
+      X-Kong-Proxy-Latency:
+      - '1'
+      Content-Length:
+      - '6321'
+      Expires:
+      - Sat, 13 Jul 2024 18:21:38 GMT
+      Cache-Control:
+      - max-age=0, no-cache, no-store
+      Pragma:
+      - no-cache
+      Date:
+      - Sat, 13 Jul 2024 18:21:38 GMT
+      Connection:
+      - keep-alive
+      Akamai-Grn:
+      - 0.3e961160.1720894898.ebcd97d
+    body:
+      encoding: UTF-8
+      string: '{"error_message":"","info_messages":[],"results":[{"formatted_address":"2,
+        Hosur Rd, Koramangala Industrial Layout, Koramangala, Bengaluru, Karnataka,
+        560095, India","types":[],"name":"2, Hosur Rd","geometry":{"viewport":{"southwest":{"lng":77.61518963363605,"lat":12.930062358602232},"northeast":{"lng":77.61777036636394,"lat":12.932577641397767}},"location":{"lng":77.61648,"lat":12.93132},"location_type":"approximate"},"address_components":[{"types":["country"],"short_name":"India","long_name":"India"},{"types":["administrative_area_level_1"],"short_name":"KARNATAKA","long_name":"KARNATAKA"},{"types":["administrative_area_level_2"],"short_name":"Bangalore","long_name":"Bangalore"},{"types":["administrative_area_level_3"],"short_name":"Bengaluru
+        South","long_name":"Bengaluru South"},{"types":["locality"],"short_name":"Bengaluru","long_name":"Bengaluru"},{"types":["sublocality"],"short_name":"Koramangala","long_name":"Koramangala"},{"types":["neighborhood"],"short_name":"Koramangala
+        Industrial Layout","long_name":"Koramangala Industrial Layout"},{"types":["postal_code"],"short_name":"560095","long_name":"560095"}],"plus_code":{"compound_code":"NA","global_code":"NA"},"place_id":"ola-platform:89ea4b400c0dd7a73137226759c1e3d2","layer":["venue"]},{"formatted_address":"Veerabhadra
+        Realtors, Prestige Star Tech A-Block, Koramangala Industrial Layout, Koramangala,
+        Bengaluru, Karnataka, 560095, India","types":[],"name":"Veerabhadra Realtors","geometry":{"viewport":{"southwest":{"lng":77.61517963368777,"lat":12.930052358602232},"northeast":{"lng":77.61776036631224,"lat":12.932567641397767}},"location":{"lng":77.61647,"lat":12.93131},"location_type":"approximate"},"address_components":[{"types":["country"],"short_name":"India","long_name":"India"},{"types":["administrative_area_level_1"],"short_name":"KARNATAKA","long_name":"KARNATAKA"},{"types":["administrative_area_level_2"],"short_name":"Bangalore","long_name":"Bangalore"},{"types":["administrative_area_level_3"],"short_name":"Bengaluru
+        South","long_name":"Bengaluru South"},{"types":["locality"],"short_name":"Bengaluru","long_name":"Bengaluru"},{"types":["sublocality"],"short_name":"Koramangala","long_name":"Koramangala"},{"types":["neighborhood"],"short_name":"Koramangala
+        Industrial Layout","long_name":"Koramangala Industrial Layout"},{"types":["postal_code"],"short_name":"560095","long_name":"560095"}],"plus_code":{"compound_code":"NA","global_code":"NA"},"place_id":"ola-platform:86036238497f74cc5a41e6132591fb9f","layer":["venue"]},{"formatted_address":"Indivillage
+        Tech Solutions LLP, No. 139, 2, Hosur Rd, Koramangala Industrial Layout, Koramangala,
+        Bengaluru, Karnataka, 560095, India","types":[],"name":"Indivillage Tech Solutions
+        LLP","geometry":{"viewport":{"southwest":{"lng":77.61517963342922,"lat":12.930102358602232},"northeast":{"lng":77.61776036657079,"lat":12.932617641397767}},"location":{"lng":77.61647,"lat":12.93136},"location_type":"approximate"},"address_components":[{"types":["country"],"short_name":"India","long_name":"India"},{"types":["administrative_area_level_1"],"short_name":"KARNATAKA","long_name":"KARNATAKA"},{"types":["administrative_area_level_2"],"short_name":"Bangalore","long_name":"Bangalore"},{"types":["administrative_area_level_3"],"short_name":"Bengaluru
+        South","long_name":"Bengaluru South"},{"types":["locality"],"short_name":"Bengaluru","long_name":"Bengaluru"},{"types":["sublocality"],"short_name":"Koramangala","long_name":"Koramangala"},{"types":["neighborhood"],"short_name":"Koramangala
+        Industrial Layout","long_name":"Koramangala Industrial Layout"},{"types":["postal_code"],"short_name":"560095","long_name":"560095"}],"plus_code":{"compound_code":"NA","global_code":"NA"},"place_id":"ola-platform:67b85e9a429cca30a2ab5327944475be","layer":["venue"]},{"formatted_address":"Ola
+        Campus(c - Wing), 140, Koramangala Industrial Layout, Koramangala, Bengaluru,
+        Karnataka, 560095, India","types":[],"name":"Ola Campus(c - Wing)","geometry":{"viewport":{"southwest":{"lng":77.61525963373947,"lat":12.930042358602233},"northeast":{"lng":77.61784036626054,"lat":12.932557641397768}},"location":{"lng":77.61655,"lat":12.9313},"location_type":"approximate"},"address_components":[{"types":["country"],"short_name":"India","long_name":"India"},{"types":["administrative_area_level_1"],"short_name":"KARNATAKA","long_name":"KARNATAKA"},{"types":["administrative_area_level_2"],"short_name":"Bangalore","long_name":"Bangalore"},{"types":["administrative_area_level_3"],"short_name":"Bengaluru
+        South","long_name":"Bengaluru South"},{"types":["locality"],"short_name":"Bengaluru","long_name":"Bengaluru"},{"types":["sublocality"],"short_name":"Koramangala","long_name":"Koramangala"},{"types":["neighborhood"],"short_name":"Koramangala
+        Industrial Layout","long_name":"Koramangala Industrial Layout"},{"types":["postal_code"],"short_name":"560095","long_name":"560095"}],"plus_code":{"compound_code":"NA","global_code":"NA"},"place_id":"ola-platform:c266014b05bf1a94780b98b426bb732c","layer":["venue"]},{"formatted_address":"Ola
+        Electric, 2, Hosur Rd, Koramangala Industrial Layout, Koramangala, Bengaluru,
+        Karnataka, 560095, India","types":[],"name":"Ola Electric","geometry":{"viewport":{"southwest":{"lng":77.6151796332741,"lat":12.930132358602233},"northeast":{"lng":77.61776036672592,"lat":12.932647641397768}},"location":{"lng":77.61647,"lat":12.93139},"location_type":"approximate"},"address_components":[{"types":["country"],"short_name":"India","long_name":"India"},{"types":["administrative_area_level_1"],"short_name":"KARNATAKA","long_name":"KARNATAKA"},{"types":["administrative_area_level_2"],"short_name":"Bangalore","long_name":"Bangalore"},{"types":["administrative_area_level_3"],"short_name":"Bengaluru
+        South","long_name":"Bengaluru South"},{"types":["locality"],"short_name":"Bengaluru","long_name":"Bengaluru"},{"types":["sublocality"],"short_name":"Koramangala","long_name":"Koramangala"},{"types":["neighborhood"],"short_name":"Koramangala
+        Industrial Layout","long_name":"Koramangala Industrial Layout"},{"types":["postal_code"],"short_name":"560095","long_name":"560095"}],"plus_code":{"compound_code":"NA","global_code":"NA"},"place_id":"ola-platform:a79ed32419962a11a588ea92b83ca78e","layer":["venue"]}],"plus_code":{"compound_code":"NA","global_code":"NA"},"status":"ok"}'
+  recorded_at: Sat, 13 Jul 2024 18:21:38 GMT
+recorded_with: VCR 6.2.0

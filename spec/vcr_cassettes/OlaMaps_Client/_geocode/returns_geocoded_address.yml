@@ -1,0 +1,128 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.olamaps.io/places/v1/geocode?address=Bangalore&language=English
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Request-Id:
+      - "<X_REQUEST_ID>"
+      X-Correlation-Id:
+      - "<X_CORRELATION_ID>"
+      Authorization:
+      - Bearer fake_token
+      Api-Key:
+      - "<API_KEY>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Www-Authenticate:
+      - Key realm="kong"
+      Content-Length:
+      - '30'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - X-Request-ID,X-Correlation-ID,X-Requested-With
+      X-Request-Id:
+      - 13f36471-2e06-46dc-8e3e-ac8dc94a1de0
+      X-Kong-Response-Latency:
+      - '0'
+      Expires:
+      - Sat, 13 Jul 2024 17:34:11 GMT
+      Cache-Control:
+      - max-age=0, no-cache, no-store
+      Pragma:
+      - no-cache
+      Date:
+      - Sat, 13 Jul 2024 17:34:11 GMT
+      Connection:
+      - keep-alive
+      Akamai-Grn:
+      - 0.36367c68.1720892051.5acf2b2e
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "message":"Unauthorized"
+        }
+  recorded_at: Sat, 13 Jul 2024 17:34:10 GMT
+- request:
+    method: get
+    uri: https://api.olamaps.io/places/v1/geocode?address=Bangalore&api_key=<API_KEY>&language=English
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Request-Id:
+      - "<X_REQUEST_ID>"
+      X-Correlation-Id:
+      - "<X_CORRELATION_ID>"
+      Authorization:
+      - Bearer fake_token
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Ratelimit-Limit:
+      - '500000'
+      X-Ratelimit-Remaining-Month:
+      - '499999'
+      X-Ratelimit-Limit-Month:
+      - '500000'
+      Ratelimit-Reset:
+      - '1489102'
+      Ratelimit-Remaining:
+      - '499999'
+      X-Request-Id:
+      - 782c5113-42bb-4228-9036-f5de197ef670
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - X-Request-ID,X-Correlation-ID,X-Requested-With
+      X-Kong-Upstream-Latency:
+      - '297'
+      X-Kong-Proxy-Latency:
+      - '1'
+      Content-Length:
+      - '968'
+      Expires:
+      - Sat, 13 Jul 2024 18:21:38 GMT
+      Cache-Control:
+      - max-age=0, no-cache, no-store
+      Pragma:
+      - no-cache
+      Date:
+      - Sat, 13 Jul 2024 18:21:38 GMT
+      Connection:
+      - keep-alive
+      Akamai-Grn:
+      - 0.3e961160.1720894897.ebcd7df
+    body:
+      encoding: UTF-8
+      string: '{"geocodingResults":[{"formatted_address":"Bengaluru, Kanakapura, Karnataka,
+        India","types":[],"name":"Bengaluru","geometry":{"viewport":{"southwest":{"lng":77.58589742295176,"lat":12.970736358602233},"northeast":{"lng":77.58847857704824,"lat":12.973251641397768}},"location":{"lng":77.587188,"lat":12.971994},"location_type":"geometric_center"},"address_components":[{"types":["country"],"short_name":"India","long_name":"India"},{"types":["administrative_area_level_1"],"short_name":"Karnataka","long_name":"Karnataka"},{"types":["administrative_area_level_3"],"short_name":"Kanakapura","long_name":"Kanakapura"},{"types":["locality"],"short_name":"Bengaluru","long_name":"Bengaluru"},{"types":["postal_code"],"short_name":"560001","long_name":"560001"},{"types":["street_address"],"short_name":"Nrupatunga
+        Road","long_name":"Nrupatunga Road"}],"plus_code":{"compound_code":"NA","global_code":"NA"},"place_id":"ola-platform:381","layer":["locality"]}],"status":"ok"}'
+  recorded_at: Sat, 13 Jul 2024 18:21:38 GMT
+recorded_with: VCR 6.2.0
