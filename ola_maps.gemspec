@@ -8,15 +8,15 @@ Gem::Specification.new do |spec|
 
   spec.summary = "A Ruby wrapper for the Ola Maps API."
   spec.description = "Provides an easy interface for interacting with the Ola Maps API."
-  spec.homepage = "https://github.com/shobhit-shukla/ola-maps-ruby"
+  spec.homepage = "https://github.com/shobhit-shukla/ola_maps"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.5.0"
 
   spec.metadata["allowed_push_host"] = "https://rubygems.org"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/shobhit-shukla/ola-maps-ruby"
-  spec.metadata["changelog_uri"] = "https://github.com/shobhit-shukla/ola-maps-ruby"
+  spec.metadata["source_code_uri"] = "https://github.com/shobhit-shukla/ola_maps"
+  spec.metadata["changelog_uri"] = "https://github.com/shobhit-shukla/ola_maps"
 
   spec.files = Dir["lib/**/*", "README.md"]
 
