@@ -97,11 +97,14 @@ bundle exec rspec
 
 ## Contributing
 
-1. Fork it (https://github.com/yourusername/ola_maps/fork)
+1. Fork it (https://github.com/shobhit-shukla/ola_maps/fork)
 2. Create your feature branch (`git checkout -b feature/YourFeature`)
 3. Commit your changes (`git commit -m 'Add some feature'`)
 4. Push to the branch (`git push origin feature/YourFeature`)
 5. Create a new Pull Request
+
+Bug reports and pull requests are welcome on GitHub at [ola_maps](https://github.com/shobhit-shukla/ola_maps). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/shobhit-shukla/ola_maps/blob/main/CODE_OF_CONDUCT.md).
+
 
 ## License
 
