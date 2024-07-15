@@ -32,6 +32,16 @@ CLIENT_ID=your_client_id
 CLIENT_SECRET=your_client_secret
 ```
 
+## API Key
+Get your API key from here:
+
+https://maps.olakrutrim.com/
+
+for details refer:
+
+https://maps.olakrutrim.com/docs
+
+
 ## Usage
 
 Here's how to use the `OlaMaps` gem:
